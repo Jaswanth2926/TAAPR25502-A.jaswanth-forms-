@@ -4,8 +4,7 @@
   <center><h1 style="color: rgb(244, 118, 14);">Job Application Form</h1></center>
     </head>
   <body style="background-color: aqua; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPp1nXD-O_8AcMdsDxm5hJKnEr6_3K_y3H0g&s);">
-  <form autocomplete="on">
-    <a href="#" onclick="submit.html">Submit</a>
+  <form autocorrect="on" aria-autocomplete="both" autocomplete="on">
     <fieldset>
       <legend >Personal details</legend>
       <table>
@@ -128,9 +127,17 @@
     </fieldset>
     <fieldset>
         <legend>Agreement</legend>
-        <input type="checkbox" name="" required="" id=""> I Agree to the terms and conditions <br>
-        <button>Submit Applicaton</button>
-        <input type="reset" name="" id="">
+         <table>
+            <tr>
+            <td><input type="checkbox" name=""  id=""> I Agree to the terms and conditions</td>
+        </tr>
+        <tr>
+            <td><button style="background-color: rgb(69, 168, 201);"  type="submit">Submit</button></td>
+        </tr> 
+        <tr>
+            <td><button  style="background-color: blueviolet;" type="reset">Reset Form</button></td>
+        </tr>
+        </table>
     </fieldset>
   </form>
 </body>
